@@ -9,15 +9,16 @@ function Team() {
           <h2 className="text-3xl font-bold mb-8 text-center text-black">Our Core Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-blue-700">Mr. Nishant Khare</h3>
-              <p className="text-gray-600 italic mb-2">Founder</p>
-              <p>Electrical & FM Expertise with 8 years of Experience</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-blue-700">Mr. Ratnakar Mishra</h3>
               <p className="text-gray-600 italic mb-2">Proprietor</p>
               <p>Electrical & FM expertise with more than 17 years of Experience</p>
             </div>
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-blue-700">Mr. Nishant Khare</h3>
+              <p className="text-gray-600 italic mb-2">Co-Founder</p>
+              <p>Electrical & FM Expertise with 8 years of Experience</p>
+            </div>
+           
            
             <div className="bg-gray-50 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-blue-700">Mr. Sanjay Mishra</h3>
