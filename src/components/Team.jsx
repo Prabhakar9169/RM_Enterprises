@@ -3,7 +3,7 @@ import React from 'react'
 function Team() {
   return (
     <>
-     {/* Our Team Section */}
+     {/* Our Team Sections */}
      <section id="team" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center text-black">Our Core Team</h2>
