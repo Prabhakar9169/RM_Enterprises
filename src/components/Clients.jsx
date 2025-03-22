@@ -13,6 +13,7 @@ function Clients() {
         "Uttar Pradesh Power Corporation Ltd (UPPCL)",
         "DC Handicraft Kendri Bhawan, Aliganj, Lucknow",
       ],
+      bgColor: "bg-red-400" // Red background for Government category
     },
     {
       title: "Hotels & Retail",
@@ -23,6 +24,7 @@ function Clients() {
         "Visa Facilitation Services Global (VFS Global) PAN India",
         "Fresh Air Flow Hazratganj, Lucknow",
       ],
+      bgColor: "bg-blue-400" // Blue background for Hotels category
     },
     {
       title: "Corporate & Construction",
@@ -33,6 +35,7 @@ function Clients() {
         "Stambh Solutions Lucknow",
         "Awadh Developers Lucknow",
       ],
+      bgColor: "bg-orange-400" // Orange background for Corporate category
     },
     {
       title: "Healthcare & Infra",
@@ -41,6 +44,7 @@ function Clients() {
         "Maa Vaishnav Infra contract [I] Pvt. Ltd.",
         "Vindhya Telelinks Limited. Lucknow (M.P. Birla Group)",
       ],
+      bgColor: "bg-green-400" // Green background for Healthcare category
     },
     {
       title: "Technology & Enterprises",
@@ -50,10 +54,12 @@ function Clients() {
         "Mensa Eco Tech Innovation Pvt Ltd",
         "Planet PCI",
       ],
+      bgColor: "bg-purple-400" // Purple background for Technology category
     },
     {
       title: "Construction & Design",
       clients: ["Vedang Construction", "Pixel Associates", "Ankia Construction"],
+      bgColor: "bg-yellow-400" // Yellow background for Construction category
     },
   ];
 
@@ -80,14 +86,14 @@ function Clients() {
                 >
                   <span>{category.title}</span>
                   <ChevronDown
-                    className={`transition-transform duration-300 ${
+                    className={`transition-transform duration-1000 ${
                       activeIndex === index ? "rotate-180" : ""
                     }`}
                     size={20}
                   />
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  className={`overflow-hidden transition-all duration-1000 ease-in-out ${
                     activeIndex === index 
                       ? "max-h-96 opacity-100" 
                       : "max-h-0 opacity-0"
@@ -96,7 +102,19 @@ function Clients() {
                   <div className="px-4 pb-4">
                     <ul className="space-y-2">
                       {category.clients.map((client, clientIndex) => (
-                        <li key={clientIndex}>{client}</li>
+                        <li 
+                          key={clientIndex}
+                          className={`transform transition-all font-bold duration-800 ${category.bgColor} px-3 py-2 rounded text-white ${
+                            activeIndex === index 
+                              ? "translate-x-0 opacity-100" 
+                              : "-translate-x-8 opacity-0"
+                          }`}
+                          style={{ 
+                            transitionDelay: activeIndex === index ? `${clientIndex * 300}ms` : "0ms"
+                          }}
+                        >
+                          {client}
+                        </li>
                       ))}
                     </ul>
                   </div>
