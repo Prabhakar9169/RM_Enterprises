@@ -7,7 +7,6 @@ import Service from "./components/Service";
 import Clients from "./components/Clients";
 import Team from "./components/Team";
 import "./App.css";
-import Registration from "./components/Registration";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -23,7 +22,6 @@ function App() {
         <Products />
         <Team />
         <Clients />
-        <Registration />
         <Contact />
         <Footer />
       </div>
