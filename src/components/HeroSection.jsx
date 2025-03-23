@@ -13,8 +13,20 @@ function HeroSection() {
   return (
     <>
       {/* Hero Section */}
-      <section id="home" className="bg-blue-700 text-white py-16 overflow-hidden">
-        <div className="container mx-auto px-4 flex flex-col items-center text-center">
+      <section 
+        id="home" 
+        className="relative  py-16 overflow-hidden bg-gray-900 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/images/backgroundImage.jpg')",
+          backgroundSize : '200% 100%',
+          backgroundRepeat : 'no-repeat'
+          // Replace 'your-image.jpg' with your actual image filename
+        }}
+      >
+        {/* Dark overlay for better text visibility */}
+        <div className="absolute inset-0 "></div>
+        
+        <div className="container mx-auto px-4 flex flex-col items-center text-center relative z-10">
           <h1 
             className={`text-4xl md:text-5xl text-yellow-600 font-bold mb-6 transition-all duration-1000 ease-in-out transform ${
               isVisible 
@@ -26,11 +38,11 @@ function HeroSection() {
           </h1>
           
           <p 
-            className={`text-xl md:text-2xl mb-8 max-w-3xl transition-all duration-700 delay-300 transform ${
+            className={`text-xl md:text-2xl mb-8 max-w-3xl font-bold transition-all duration-700 delay-300 transform ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
             }`}
           >
-            Government approved Class A registered contractor for electrical work, MEP services, and material supply
+            Government approved Class A registered contractor for Electrical work, All MEP services, all kind of material supply, all type of Civil construction and Optical fiber Work.
           </p>
           
           <div 
@@ -46,7 +58,7 @@ function HeroSection() {
             </a>
             <a 
               href="#contact" 
-              className="bg-white hover:bg-gray-100 text-blue-800 font-bold py-3 px-6 rounded-md transition"
+              className="bg-blue-500 hover:bg-gray-100  font-bold py-3 px-6 rounded-md transition"
             >
               Contact Us
             </a>

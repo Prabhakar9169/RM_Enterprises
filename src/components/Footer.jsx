@@ -11,8 +11,7 @@ function Footer() {
             <div>
               <h3 className="text-xl font-bold mb-4">RM ENTERPRISES</h3>
               <p className="mb-4">Class A Registered Electrical Contractor and Material Supplier with rich experience in Electromechanical, Hospitality and Supply Chain management.</p>
-              <p className="text-gray-400">MSME Registered: UDYAM-UP-50-0053010</p>
-              <p className="text-gray-400">GST: 09BRGPM0120D2ZB</p>
+            
             </div>
             
             <div>
@@ -29,10 +28,17 @@ function Footer() {
             
             <div>
               <h3 className="text-xl font-bold mb-4">Certifications</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2" style={{ listStyleType: "'➡ '" }}>
                 <li>Government Approved Class A Electrical Contractor</li>
-                <li>MSME Registered Enterprise</li>
                 <li>GST Registered Business</li>
+                <li>ISO Registered Certificate</li>
+                <li>MSME Registered Enterprises</li>               
+                <li>E.S.I Act Registered</li>
+                <li>Character Registered Certificate</li>
+                <li>Solvency Registered Certificat</li>
+                <li>Labour Licence Registered Certificat</li>
+                <li>Labour Licence Registered Certificat</li>
+                <li>Employee PF Registered Certificat</li>
               </ul>
             </div>
           </div>

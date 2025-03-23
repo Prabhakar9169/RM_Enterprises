@@ -14,7 +14,7 @@ function Header() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <h1 className="text-2xl font-bold">RM ENTERPRISES</h1>
-            <span className="text-sm bg-yellow-500 text-blue-900 px-2 py-1 rounded">MSME Registered</span>
+            <span className="text-sm bg-yellow-500 text-blue-900 px-2 py-1 rounded">ISO Registered</span>
           </div>
           
           {/* Desktop Navigation */}
