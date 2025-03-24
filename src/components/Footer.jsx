@@ -37,7 +37,6 @@ function Footer() {
                 <li>Character Registered Certificate</li>
                 <li>Solvency Registered Certificat</li>
                 <li>Labour Licence Registered Certificat</li>
-                <li>Labour Licence Registered Certificat</li>
                 <li>Employee PF Registered Certificat</li>
               </ul>
             </div>
