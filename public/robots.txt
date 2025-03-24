@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rmenterprises.info/sitemap.xml
