@@ -78,6 +78,12 @@ function Contact() {
                     </div>
                   </div>
                   <div className="flex items-center">
+                    <Phone className="mr-3 flex-shrink-0" size={20} />
+                    <div>
+                      <p>Toll Free No. 7084000069</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
                     <Mail className="mr-3 flex-shrink-0" size={20} />
                     <div>
                       <p>rmenterprisesjop@gmail.com</p>
